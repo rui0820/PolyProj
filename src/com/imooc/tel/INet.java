@@ -19,4 +19,5 @@ public interface INet {
 	static void stop() {
 		System.out.println("我是接口中的静态方法");
 	}
+
 }

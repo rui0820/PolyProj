@@ -5,6 +5,7 @@ import com.imooc.tel.FourthPhone;
 import com.imooc.tel.INet;
 import com.imooc.tel.IPhoto;
 import com.imooc.tel.SmartWatch;
+import com.imooc.tel.ThirdPhone;
 
 public class PhoneTest {
 
@@ -26,6 +27,16 @@ public class PhoneTest {
 		System.out.println(net.TEMP);//调用接口的信息
 		SmartWatch sw = new SmartWatch();
 		System.out.println(sw.TEMP);//调用实现类内部信息
+		System.out.println("--------");
+		INet net2 = new SmartWatch();
+		net2.connection();
+		IPhoto ip2 = new SmartWatch();
+		ip2.connection();
+		System.out.println("--------");
+		INet net3 = new FourthPhone();
+		net3.connection();
+		IPhoto ip3 = new FourthPhone();
+		ip3.connection();
 	}
 
 }
